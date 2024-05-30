@@ -1,0 +1,36 @@
+sudo apt-get update
+nano master.txt
+git init
+git add master.txt
+git commit –m "committing master.txt file".
+git branch
+git checkout master
+ls  
+git branch develop
+git branch
+git checkout develop
+nano develop.txt
+git add develop.txt
+git commit –m "committing develop.txt file"
+git branch feature
+git branch
+git checkout feature
+nano feature.txt  
+git add feature.txt
+git commit –m "committing feature.txt file"
+cd .ssh/
+ssh-keygen
+sudo cat id_rsa.pub
+cd ..
+git remote add Git-Case-Study-1 git@github.com:visaltyagi/Git-Case-Study-1.git
+git remote -v
+git push Git-Case-Study-1 master
+git push Git-Case-Study-1 develop
+git push Git-Case-Study-1 feature
+git branch
+git checkout develop
+git merge feature
+git checkout master
+git merge develop
+git push Git-Case-Study-1 develop
+git push Git-Case-Study-1 master
